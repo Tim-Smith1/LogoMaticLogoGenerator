@@ -20,6 +20,8 @@
 ---
 ## About
   This LMLG generator will allow users to create a .SVG file without having to create it from scratch. This will save users time by not having to spend time recreating a logo or finding a designer. 
+  
+  Video walk through: https://drive.google.com/file/d/1buwc8CjAIKRP-FEeWlytsZKWlawAEI7k/view
 ---
 ## Installation:
   Clone the repo from GitHub using the repo link below. also 
@@ -59,7 +61,7 @@ So that I can quickly create a professional SVG logo for a new projects
   npm i jest@28.1.3    npm run test
 ---
 ## Authors and Acknowledgments
-  Tim Smith as well as Study groups and help from TA Sam Adams.   The class was also giveb starter code for the tests scenarios
+  Tim Smith as well as Study groups and help from TA Sam Adams.   The class was also given starter code for the tests scenarios
 ---
 ## Contact Information:
 * GitHub Username: Tim-Smith1
