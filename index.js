@@ -1,23 +1,49 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const questions = require('./utils/questions');
-const generateSvg = require('./utils/generateSvg')
-const shapeCircle = require('./utils/shapeCircle');
+const SVG = require('./utils/generateSvg')
+const Circle = require('./utils/Circle');
+const Triangle = require('./utils/Triangle');
+const Square = require('./utils/Square');
 
 
-//function init() {
+
 inquirer
     .prompt(questions)
     
-.then((data) => {
+.then(({letters, textcolor, shapecolor, shape}) => {
+   let userShape;
+   
+    switch (shape){
+        case 'circle':
+        userShape = new Circle();
+        break;
+
+        case 'triangle':
+        userShape = new Triangle();
+        break;
+
+        case 'square':
+        userShape = new Square();
+        break;
+
+        default: 
+        return 'No shape selected';
+        break;
+
+    }
+     
+    userShape.setColor(shapecolor);
+    let svg = new SVG();
+    svg.setText(letters, textcolor);
+    svg.setShape(userShape.render())
     
-    fs.writeFile('./examples/logo.svg', generateSvg(data), (err) =>
+
+
+    fs.writeFile('./examples/logo.svg', svg.render(), (err) =>
     err ? console.error(err) : console.log('Generated logo.svg!'))
     
   }
   );  
-//}
-  
-// Function call to initialize app
-//init();
+
 

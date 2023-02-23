@@ -1,8 +1,16 @@
 const questions = [
     {
         type: 'input',
-        message: 'Please input up to 3 letters?',
         name: 'letters',
+        message: 'Please input up to 3 letters?',
+        validate: function(input) {
+            if(input.length <= 3 && input.length !== 0) {
+                return true;
+            }
+            else {
+                return "Text must be <= 3 characters!"
+            }
+        }
     },
     {
         type: 'input',
