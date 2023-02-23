@@ -2,7 +2,7 @@
   
 # LogoMaticLogoGenerator
 
-  This is a program generate a svg logo with up to 3 characters.
+  This is a program that generates a svg logo with up to 3 characters.
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -22,7 +22,8 @@
   This LMLG generator will allow users to create a .SVG file without having to create it from scratch. This will save users time by not having to spend time recreating a logo or finding a designer. 
 ---
 ## Installation:
-  Clone the repo from GitHub using the repo link below. also requires- npm i inquirer@8.2.4     and      npm i jest@28.1.3  
+  Clone the repo from GitHub using the repo link below. also 
+  requires- npm i inquirer@8.2.4     and      npm i jest@28.1.3  
 
   To clone the repo:
   
@@ -32,8 +33,8 @@
 ---
 ## Usage
 
-I want to create a README generator
-So that I can quickly create a professional README.md file for a new projects
+I want to create a SVG logo generator
+So that I can quickly create a professional SVG logo for a new projects
 ---
 ## License
   License used for this project - MIT
